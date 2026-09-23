@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-card {
+  width: 380px;
+  background: white;
+  padding: 40px 32px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.cash-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 15px;
+  background: #00d64f;
+  color: white;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0 0 30px;
+  font-size: 28px;
+}
+
+.amount-box {
+  width: 100%;
+  height: 70px;
+  border: 2px solid #00d64f;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  margin-bottom: 18px;
+}
+
+.amount-box span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00b83f;
+}
+
+.amount-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.quick-amounts {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.quick-amounts button {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quick-amounts button:hover {
+  border-color: #00d64f;
+  color: #00b83f;
+}
+
+.pay-button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  background: #00d64f;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background: #00bd45;
+}
+
+.pay-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
